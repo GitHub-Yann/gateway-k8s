@@ -1,15 +1,23 @@
 # gateway-k8s
+
 Dockerfile
+
 FROM <you can make the image from a basic debian image with jdk8>
 
 MAINTAINER yann
 
 RUN apt-get update
+
 RUN apt-get install -y procps
+
 RUN apt-get install -y vim
+
 RUN apt-get install -y curl
+
 RUN apt-get install -y xinetd
+
 RUN apt-get install -y telnet
+
 RUN apt-get install -y less
 
 RUN mkdir -p /opt/microservice/product-gateway
