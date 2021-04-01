@@ -2,7 +2,7 @@
 
 Dockerfile
 
-FROM <you can make the image from a basic debian image with jdk8>
+FROM you can make the image from a basic debian image with jdk8
 
 MAINTAINER yann
 
