@@ -1,9 +1,9 @@
 # - - - - - - - - - - - - - - backend-demo - - - - - - - - - - - - - - 
 
-#### <font color=#0000FF>api</font>
+#### - - - api
 GET : /api/demo/test/get
 
-#### Dockerfile
+#### - - - Dockerfile
 
 FROM you can make the image from a basic debian image with jdk8
 
@@ -25,7 +25,7 @@ CMD ["sh","-c","java -jar -Xms512m -Xmx512m /opt/microservice/client/backend.ser
 
 # - - - - - - - - - - - - - - gateway-k8s - - - - - - - - - - - - - - 
 
-#### Dockerfile
+#### - - - Dockerfile
 
 FROM you can make the image from a basic debian image with jdk8
 
