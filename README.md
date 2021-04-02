@@ -1,4 +1,26 @@
-# gateway-k8s
+# - - - - - - - - - - - - - - backend-demo - - - - - - - - - - - - - - 
+
+Dockerfile
+
+FROM you can make the image from a basic debian image with jdk8
+
+MAINTAINER yann
+
+RUN mkdir -p /opt/microservice/client
+
+RUN mkdir -p /opt/microservice/log/client
+
+COPY backend.service-0.0.1-SNAPSHOT.jar /opt/microservice/client
+
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+EXPOSE 9955
+
+EXPOSE 19955
+
+CMD ["sh","-c","java -jar -Xms512m -Xmx512m /opt/microservice/client/backend.service-0.0.1-SNAPSHOT.jar --server.port=9955 --management.server.port=19955 --spring.application.name=demo-Y-test123-hello-service"]
+
+# - - - - - - - - - - - - - - gateway-k8s - - - - - - - - - - - - - - 
 
 Dockerfile
 
